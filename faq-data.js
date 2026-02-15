@@ -142,12 +142,7 @@ const faqData = [
         quickReply: null,
         priority: 1
     },
-    {
-        keywords: ["tifare", "tifi"],
-        answer: "Forza Avellino",
-        quickReply: null,
-        priority: 1
-    },
+
 ];
 
 // Messaggio di default quando il bot non capisce
