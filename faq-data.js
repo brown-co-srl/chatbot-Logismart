@@ -343,7 +343,7 @@ const faqData = [
     // AMMINISTRAZIONE
     // ─────────────────────────────────────────
     {
-        keywords: ["utent", "permess", "ruol", "accesso", "login", "password", "credenzial", "amministrazion"],
+        keywords: ["utent", "permess", "ruol", "accesso", "amministrazion"],
         answer: "Per gestire utenti e ruoli:\n1. Vai su 'Amministrazione' → 'Gestione Utenti' (o 'Gestione Ruoli')\n2. Clicca 'Nuovo' per aggiungere\n3. Assegna ruolo, fornitore e preferenze (posizione, negozio, marca)\n4. Attiva le caselle: Attivo, Ricevi e-mail trasferimento, Ricevi e-mail RFID\n\nRuoli predefiniti: Amministratore, Gestore, Venditore, Logistica, Sola lettura.\nSolo gli amministratori possono modificare i ruoli.",
         quickReply: null,
         priority: 6
