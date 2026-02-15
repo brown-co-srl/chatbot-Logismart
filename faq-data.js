@@ -136,7 +136,6 @@ const faqData = [
         quickReply: null,
         priority: 6
     }
-
 ];
 
 // Messaggio di default quando il bot non capisce
