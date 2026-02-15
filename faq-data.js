@@ -12,7 +12,7 @@
 const faqData = [
     {
         keywords: ["tifi"],
-        answer: "Avellino",
+        answer: "Torino",
         quickReply: null,
         priority: 1
     },
