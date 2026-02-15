@@ -11,6 +11,12 @@
 
 const faqData = [
     {
+        keywords: ["tifi"],
+        answer: "Avellino",
+        quickReply: null,
+        priority: 1
+    },
+    {
         keywords: ["ciao", "salve", "buongiorno", "buonasera", "hey", "hello", "hi", "saluti"],
         answer: "Ciao! Benvenuto nel supporto LogiSmart. Come posso aiutarti oggi?",
         quickReply: null,
