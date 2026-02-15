@@ -11,8 +11,8 @@
 
 const faqData = [
     {
-        keywords: ["tifi"],
-        answer: "Avellino",
+        keywords: ["per quale squadra tifi"],
+        answer: "Torino",
         quickReply: null,
         priority: 1
     },
