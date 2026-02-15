@@ -24,7 +24,7 @@ const faqData = [
     },
     {
         keywords: ["orari", "orario", "apertura", "chiusura", "aperto", "aprite", "chiudete", "quando", "ora", "disponibil"],
-        answer: "Il nostro servizio di assistenza è disponibile dal lunedì al venerdì, dalle 9:00 alle 18:00. Per emergenze fuori orario, utilizza il sistema di ticket visitando la sezione Supporto.",
+        answer: "AAA Il nostro servizio di assistenza è disponibile dal lunedì al venerdì, dalle 9:00 alle 18:00. Per emergenze fuori orario, utilizza il sistema di ticket visitando la sezione Supporto.",
         quickReply: "Orari Assistenza",
         priority: 7
     },
