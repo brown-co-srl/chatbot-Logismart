@@ -135,13 +135,7 @@ const faqData = [
         answer: "LogiSmart è una piattaforma completa per la gestione della flotta veicoli. Permette di:\nTracciare veicoli in tempo reale\nGestire trasferimenti\nWorkflow danni e manutenzioni\nReport e analisi\nControllo costi.",
         quickReply: null,
         priority: 6
-    },
-    {
-        keywords: ["inventato"],
-        answer: "Mio papà è Giovanni Esposito",
-        quickReply: null,
-        priority: 1
-    },
+    }
 
 ];
 
