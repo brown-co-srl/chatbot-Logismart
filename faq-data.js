@@ -34,7 +34,7 @@ const faqData = [
     },
     {
         keywords: ["contatt", "email", "telefono", "chiama", "scriv", "parlare", "numero", "assistenza", "supporto"],
-        answer: "Puoi contattare il nostro supporto:\nEmail: logismart@brown-co.it\nTelefono: 01119700354\nIndirizzo: Via S.Quintino, 4 – 10121 Torino",
+        answer: "Puoi contattare il nostro supporto tramite:\nEmail: logismart@brown-co.it\nTelefono: 01119700354\nIndirizzo: Via S.Quintino, 4 – 10121 Torino",
         quickReply: "Contatti",
         priority: 8
     },
