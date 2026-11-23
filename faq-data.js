@@ -43,7 +43,7 @@ const faqData = [
         keywords: ["orari", "orario", "apertura", "aperti", "disponibili", "quando posso chiamare", "orari assistenza"],
         titolo: "Orari dell'assistenza",
         domande: ["a che ora rispondete", "quando è aperto il supporto", "siete aperti il sabato?", "fino a che ora posso chiamare"],
-        answer: "Il nostro supporto è disponibile dal lunedì al venerdì, dalle 9:00 alle 18:00. Fuori orario apri una richiesta dal portale di assistenza (voce Aiuto nel menu).",
+        answer: "Il nostro supporto è disponibile dal lunedì al venerdì, dalle 9:00 alle 18:00. Fuori orario apri una richiesta dal portale di assistenza (menu Aiuto, voce «Portale di assistenza» nelle versioni nuove).",
         quickReply: null,
         priority: 7
     },
@@ -51,7 +51,7 @@ const faqData = [
         keywords: ["contatt", "email assistenza", "telefono", "chiamare", "scrivere", "parlare con", "numero", "assistenza", "supporto", "ticket", "freshdesk", "portale"],
         titolo: "Contattare l'assistenza",
         domande: ["come vi contatto", "a chi scrivo per un problema", "numero di telefono dell'assistenza", "mail del supporto", "voglio parlare con una persona"],
-        answer: "Puoi contattare il supporto LogiSmart:\n- Email: logismart@brown-co.it\n- Telefono: 01119700354\n- Indirizzo: Via S.Quintino, 4 – 10121 Torino\n- Portale di assistenza (voce Aiuto nel menu): https://brownco.freshdesk.com/support/home",
+        answer: "Puoi contattare il supporto LogiSmart:\n- Email: logismart@brown-co.it\n- Telefono: 01119700354\n- Indirizzo: Via S.Quintino, 4 – 10121 Torino\n- Portale di assistenza (menu Aiuto, voce «Portale di assistenza» nelle versioni nuove): https://brownco.freshdesk.com/support/home",
         quickReply: "Contatti",
         priority: 8
     },
@@ -694,8 +694,8 @@ const faqData = [
     {
         keywords: ["note carrello", "annotazioni carrello", "nota viaggio", "note perse", "nota non salvata", "note rimozione dal viaggio"],
         titolo: "Note del carrello",
-        domande: ["scrivere una nota sulla richiesta", "le note si sono perse", "annotazioni del carrello"],
-        answer: "Note del carrello e dei viaggi:\n- le Annotazioni del carrello passano al viaggio quando prenoti\n- togliendo il veicolo dal viaggio e rimettendolo nel carrello le Annotazioni diventano «Rimosso dal viaggio il … da …: nota di rimozione – nota del viaggio»: nessuna nota si perde\n- prenotando più veicoli insieme ognuno porta la sua nota\n- oltre 255 caratteri si accorcia la parte più vecchia, mai l'ultima nota\n- la nota del viaggio (foglietto nel Calendario viaggi) si può anche cancellare",
+        domande: ["scrivere una nota sulla richiesta", "le note si sono perse", "annotazioni del carrello", "le note vecchie compaiono sul nuovo viaggio", "azzerare le note quando tolgo un veicolo dal viaggio"],
+        answer: "Note del carrello e dei viaggi:\n- le Annotazioni del carrello passano al viaggio quando prenoti\n- togliendo il veicolo dal viaggio e rimettendolo nel carrello tornano nel carrello le sue note (nessuna nota si perde); la nota di annullamento resta in Veicoli annullati\n- togliendo il veicolo dal viaggio SENZA rimetterlo nel carrello, alla prenotazione successiva le note ripartono pulite (si usa solo la nota scritta da chi prenota o quella di una richiesta aperta nel carrello); le note vecchie restano in Veicoli annullati\n- prenotando più veicoli insieme ognuno porta la sua nota\n- oltre 255 caratteri si accorcia la parte più vecchia, mai l'ultima nota\n- la nota del viaggio (foglietto nel Calendario viaggi) si può anche cancellare",  // AAA - assistente (20/11/2026): risposta aggiornata
         quickReply: null,
         priority: 7
     },
@@ -779,7 +779,7 @@ const faqData = [
         keywords: ["nota annullamento", "nota di annullamento", "tolto dal viaggio", "togliere dal viaggio", "rimosso dal viaggio", "rimettere nel carrello", "rimettere il veicolo nel carrello", "rimesso nel carrello", "reinserire nel carrello", "dove trovo la nota"],
         titolo: "Nota di annullamento",
         domande: ["perché è stato tolto dal viaggio", "motivo dell'annullamento", "nota quando tolgo un veicolo"],
-        answer: "Quando togli un veicolo da un viaggio (Calendario viaggi) puoi scrivere una nota. La nota:\n- va nella mail di annullamento\n- resta sul trasferimento annullato: la vedi in «Veicoli Annullati» e nel report «Trasferimenti» (colonna Nota annullamento)\n- se rispondi Sì a «rimettere nel carrello», compare all'inizio delle Annotazioni della nuova riga del carrello: «Rimosso dal viaggio il gg/mm/aaaa da Utente: nota - annotazioni originali».",
+        answer: "Quando togli un veicolo da un viaggio (Calendario viaggi) puoi scrivere una nota. La nota:\n- va nella mail di annullamento\n- resta sul trasferimento annullato: la vedi in «Veicoli Annullati» e nel report «Trasferimenti» (colonna Nota annullamento)\nSe rispondi Sì a «rimettere nel carrello», nella nuova riga del carrello tornano solo le note del veicolo, senza la nota di annullamento.",  // AAA - assistente (20/11/2026): risposta aggiornata
         quickReply: null,
         priority: 8
     },
@@ -1055,7 +1055,7 @@ const faqData = [
         keywords: ["disabbina", "disabbinare", "disabbina veicoli usciti", "liberare etichetta", "rimuovi tag", "togli tag", "veicoli usciti"],
         titolo: "Disabbinare i tag",
         domande: ["togliere il tag a un'auto", "liberare l'etichetta", "disabbinare i veicoli usciti", "rimuovere il tag da una vettura venduta"],
-        answer: "Per liberare le etichette RFID dei veicoli usciti o venduti:\n- «Disabbina veicoli usciti» (Posizione veicoli) le disabbina tutte in un colpo; serve il permesso «Consenti di disabbinare i veicoli usciti»\n- in automatico ogni notte: attività «Veicoli usciti: libera il parcheggio e disabbina il tag» (Amministrazione › Opzioni › Attività automatiche)\n- un singolo tag si disabbina dall'app (Disabbina) o con il permesso «disabbinare un'etichetta»\nAttenzione: un tag disabbinato non si può più usare. Se il veicolo rientra (per esempio come usato) serve un tag nuovo e va riposizionato.",  // AAA - assistente (20/11/2026): corretta, un tag disabbinato non si riusa
+        answer: "Per liberare le etichette RFID dei veicoli usciti o venduti:\n- «Disabbina veicoli usciti» (Posizione veicoli) le disabbina tutte in un colpo; serve il permesso «Consenti di disabbinare i veicoli usciti»\n- in automatico ogni notte: attività «Veicoli usciti: libera il parcheggio e disabbina il tag» (Amministrazione › Opzioni › Attività automatiche)\n- un singolo tag si disabbina dall'app (Disabbina) o con il permesso «disabbinare un'etichetta»\nAttenzione: un tag disabbinato non si può più usare. Se il veicolo rientra (per esempio come usato) serve un tag nuovo e va riposizionato.",  // AAA - assistente (20/11/2026): risposta aggiornata
         quickReply: null,
         priority: 8
     },
@@ -1552,10 +1552,10 @@ const faqData = [
         priority: 4
     },
     {
-        keywords: ["manuale", "guida", "istruzioni", "documentazione", "aiuto del menu"],
+        keywords: ["manuale", "guida", "istruzioni", "documentazione", "aiuto del menu", "apri il manuale", "portale di assistenza"],
         titolo: "Il manuale e l'aiuto",
-        domande: ["dove trovo il manuale", "c'è una guida da leggere", "voglio le istruzioni complete"],
-        answer: "Il manuale completo (Manuale LogiSmart) te lo può dare il tuo amministratore o l'assistenza (logismart@brown-co.it). La voce «Aiuto» del menu apre il portale di assistenza Brown & Co. Qui in chat puoi chiedermi qualsiasi cosa: ti rispondo con i passaggi da fare.",
+        domande: ["dove trovo il manuale", "c'è una guida da leggere", "voglio le istruzioni complete", "come apro il manuale"],
+        answer: "Il manuale si apre dalla piattaforma: menu «Aiuto» › «Manuale» oppure il link «Manuale» in basso nella pagina (si apre in una nuova scheda ed è quello della versione installata). «Aiuto» › «Portale di assistenza» apre il portale Brown & Co. Se nel menu «Aiuto» non vedi la voce «Manuale», la tua versione è precedente: chiedi il manuale al tuo amministratore o all'assistenza (logismart@brown-co.it). Qui in chat puoi chiedermi qualsiasi cosa: ti rispondo con i passaggi da fare.",  // AAA - manuale in piattaforma (22/11/2026): risposta aggiornata
         quickReply: null,
         priority: 4
     },
